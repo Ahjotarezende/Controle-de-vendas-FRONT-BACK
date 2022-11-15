@@ -1,15 +1,27 @@
 import NotificationButton from "../NotificationButton";
-import './style.css'
+import "./style.css";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 function SalesTable() {
   return (
     <>
       <h2>Vendas</h2>
       <div>
         <div className="pesquisas">
-          <input type="date" />
+          <DatePicker
+            selected={new Date()}
+            onChange={(date: Date) => {}}
+            className="date"
+            dateFormat="dd/MM/yyyy"
+          />
         </div>
         <div>
-          <input type="date" />
+          <DatePicker
+            selected={new Date()}
+            onChange={(date: Date) => {}}
+            className="date"
+            dateFormat="dd/MM/yyyy"
+          />
         </div>
       </div>
       <div>
@@ -34,7 +46,7 @@ function SalesTable() {
               <td className="show992">11</td>
               <td>R$ 55300.00</td>
               <td>
-                <NotificationButton/>
+                <NotificationButton />
               </td>
             </tr>
             <tr>
@@ -45,7 +57,7 @@ function SalesTable() {
               <td className="show992">11</td>
               <td>R$ 55300.00</td>
               <td>
-                <NotificationButton/>
+                <NotificationButton />
               </td>
             </tr>
             <tr>
@@ -56,7 +68,7 @@ function SalesTable() {
               <td className="show992">11</td>
               <td>R$ 55300.00</td>
               <td>
-                <NotificationButton/>
+                <NotificationButton />
               </td>
             </tr>
           </tbody>

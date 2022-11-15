@@ -80,3 +80,25 @@
   .showData, .show992{
       display: none;
   }
+  @media (min-width: 576px){
+    .showData{
+        display: table-cell;
+    }
+    .tabelaResult{
+        padding: 1.93rem 35px;
+    }
+    #sales{
+        padding: 2.5rem 1.25rem;
+    }
+    .salesTable tbody tr{
+        height: 62px;
+    }
+    .salesTable tbody{
+        font-size: 18px;
+    }
+}
+@media (min-width: 992px){
+    .show992{
+        display: table-cell;
+    }
+}
